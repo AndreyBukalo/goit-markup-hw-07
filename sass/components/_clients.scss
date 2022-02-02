@@ -1,0 +1,40 @@
+.clients {
+  @extend %section;
+  &__title {
+    @include reset;
+    @extend %title;
+    margin-bottom: 50px;
+  }
+}
+.icon-box {
+  @extend %list;
+  display: flex;
+
+  &__item:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+  &__link {
+    transition: color 250ms $cubic;
+
+    display: flex;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    border: 1.5px solid #afb1b8;
+    border-radius: 4px;
+    color: $social-link-color;
+    &:hover,
+    :focus {
+      border: 1.5px solid $accent;
+      color: $accent;
+    }
+  }
+}

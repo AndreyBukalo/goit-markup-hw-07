@@ -1,0 +1,43 @@
+.features {
+  @extend %section;
+  padding-bottom: 0;
+
+  &__title--hidden {
+    @extend %visually-hidden;
+  }
+}
+
+.thumbnail {
+  @extend %list;
+  @include flex-center;
+
+  &__item {
+    width: 270px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  &__icon {
+    height: 120px;
+    @include flex-center;
+    margin-bottom: 30px;
+    background-color: $team-bgc;
+  }
+
+  &__title {
+    @include reset;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $second-text-color;
+  }
+
+  &__text {
+    @include reset;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
+}
