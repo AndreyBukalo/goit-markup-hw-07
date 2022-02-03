@@ -1,0 +1,7 @@
+.projects {
+  @extend %section;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}

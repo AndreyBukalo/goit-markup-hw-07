@@ -1,5 +1,6 @@
 @import 'utils/variables';
 @import 'utils/util_class';
+@import 'base/base';
 @import 'components/page_header';
 @import 'components/hero';
 @import 'components/features';
@@ -9,4 +10,6 @@
 @import 'components/clients';
 @import 'components/page-footer';
 @import 'components/backdrop';
-// @import 'components/form;';
+@import 'components/porfolio';
+@import 'components/fillter_buttons';
+@import 'components/products';
