@@ -121,6 +121,9 @@
   outline: none;
   border: 1px solid $accent;
 }
+.form__input:not(:placeholder-shown) + .form__text {
+  transform: translate(-30px, -38px);
+}
 .form__label:focus-within > .form__icon {
   fill: $accent;
 }
@@ -128,11 +131,8 @@
   transform: translate(-30px, -38px);
   color: #2196f3;
 }
-.form__input:not(:placeholder-shown) + .form__label {
-  transform: translate(-30px, -38px);
-}
 .form__label:focus-within > .form__input {
-  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .form__input--comments {
@@ -157,10 +157,9 @@
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
-.form__input--comments:focus + .form__text--comments {
-  color: $accent;
-}
-
+// .form__input--comments:focus + .form__text--comments {
+//   color: $accent;
+// }
 .checkbox {
   display: flex;
 

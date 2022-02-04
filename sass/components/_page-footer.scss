@@ -3,6 +3,11 @@
   padding-bottom: 60px;
   background-color: $footer-bgc;
 }
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .contacts-block {
   margin-right: 70px;
 }
@@ -53,11 +58,6 @@
 .social-site__link--graybcg {
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
-}
-
-.footer .box {
-  display: flex;
-  align-items: baseline;
 }
 
 .subcribe-block__title {

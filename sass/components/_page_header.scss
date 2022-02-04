@@ -4,10 +4,10 @@
   min-height: 80px;
   background-color: $white;
   border-bottom: 1px solid $header-bgc;
-  &__container {
-    @extend %container;
-    @include flex-center;
-  }
+}
+
+.container--page-header {
+  @include flex-center;
 }
 .navigation {
   @extend %list;
@@ -72,7 +72,7 @@
       color: $accent;
     }
   }
-  &__link--margin {
+  &__link--margin-right {
     margin-right: 50px;
   }
 }

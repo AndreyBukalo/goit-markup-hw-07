@@ -11,7 +11,7 @@
 /* белый цвет  */
 /* цвет контактов футера  */
 /*цвет беэкдропа */
-.features__title--hidden {
+.features__title--hidden, .projects__title-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -58,13 +58,6 @@
   margin: 0px auto;
 }
 
-.page-header__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0px auto;
-}
-
 .features, .about, .team, .clients, .projects {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -79,8 +72,22 @@
   color: #212121;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  letter-spacing: 0.02em;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -102,26 +109,6 @@
   color: #2196f3;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #757575;
-  letter-spacing: 0.02em;
-  background-color: #fff;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /* Шапка и навигация */
 .page-header {
   min-height: 80px;
@@ -129,7 +116,7 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__container {
+.container--page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +217,7 @@ ul {
   color: #2196f3;
 }
 
-.contacts__link--margin {
+.contacts__link--margin-right {
   margin-right: 50px;
 }
 
@@ -494,13 +481,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
   padding-top: 16px;
   padding-bottom: 16px;
   border: 1.5px solid #afb1b8;
@@ -518,6 +505,15 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .contacts-block {
@@ -573,15 +569,6 @@ ul {
 .social-site__link--graybcg {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
-}
-
-.footer .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .subcribe-block__title {
@@ -789,6 +776,11 @@ ul {
   border: 1px solid #2196f3;
 }
 
+.form__input:not(:placeholder-shown) + .form__text {
+  -webkit-transform: translate(-30px, -38px);
+          transform: translate(-30px, -38px);
+}
+
 .form__label:focus-within > .form__icon {
   fill: #2196f3;
 }
@@ -799,13 +791,8 @@ ul {
   color: #2196f3;
 }
 
-.form__input:not(:placeholder-shown) + .form__label {
-  -webkit-transform: translate(-30px, -38px);
-          transform: translate(-30px, -38px);
-}
-
 .form__label:focus-within > .form__input {
-  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .form__input--comments {
@@ -828,10 +815,6 @@ ul {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-}
-
-.form__input--comments:focus + .form__text--comments {
-  color: #2196f3;
 }
 
 .checkbox {

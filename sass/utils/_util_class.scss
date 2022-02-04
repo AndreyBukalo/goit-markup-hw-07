@@ -39,11 +39,11 @@
   margin: 0;
   padding: 0;
 }
-// %list {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -57,10 +57,10 @@
   padding-right: 15px;
   margin: 0px auto;
 }
-// %section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 %title {
   font-size: 36px;
